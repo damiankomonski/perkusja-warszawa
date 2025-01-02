@@ -1,0 +1,604 @@
+//Main variables
+$font-family-sans-serif: "Inter", sans-serif;
+$font-size-base: 1.0625rem;
+$body-color: #D2D2D2;
+
+// Colors
+$primary: #FFD53C;
+$secondary: #C02C2A;
+$custom-theme-color: (
+  "grey-100": #FAFAFA,
+  "grey-500": #D2D2D2,
+  "grey-600": #A0A0A0,
+  "grey-700": #777777,
+  "white": #ffffff,
+  "black": #000000,
+  "red-500": #CE0000
+);
+
+// Grid
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1248px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+//Headings variables
+$headings-font-weight: 600;
+$headings-color: #FAFAFA;
+$h1-font-size: 5rem;
+$h2-font-size: 3rem;
+$h3-font-size: 2.25rem;
+$h4-font-size: 1.75rem;
+$h5-font-size: 1.5rem;
+$h6-font-size: 1.125rem;
+
+//Buttons variables
+$btn-font-weight: 700;
+$btn-font-size: 1.0625rem;
+$btn-padding-y: .875rem;
+$btn-padding-x: 2rem;
+$btn-line-height: 1.75rem;
+$btn-border-radius: 0;
+
+// $btn-padding-y-sm: .3125rem;
+// $btn-padding-x-sm: .625rem;
+// $btn-font-size-sm: .875rem;
+// $btn-border-radius-sm: 0;
+
+// Inputs variables
+// $input-padding-y: .75rem;
+// $input-padding-x: 0;
+// $input-font-size: 1rem;
+// $input-border-radius: 0;
+// $input-placeholder-color: #737373;
+// $input-font-weight: 400;
+
+// $input-padding-y-lg: 0;
+// $input-padding-x-lg: 0;
+// $input-font-size-lg: 1.75rem;
+// $input-border-radius-lg: 0;
+
+// Select variables
+// $form-select-padding-y: 0.75rem;
+// $form-select-padding-x: 0;
+// $form-select-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+// $form-select-border-radius: 0;
+// $form-select-disabled-color: lightgrey;
+// $form-select-disabled-bg: initial;
+
+//Navbar variables
+// $navbar-padding-y: 0;
+// $navbar-light-color: #23242C;
+// $navbar-brand-padding-y: 0;
+
+//Tables variables
+// $table-cell-padding-y: 12px;
+// $table-cell-padding-x: 8px;
+// $border-color: #F3F3F3;
+// $table-cell-vertical-align: middle;
+// $table-border-width: 0.5px;
+// $table-th-font-weight: 500;
+
+// Checkboxes
+// $form-check-input-width: 20px;
+// $form-check-padding-start: 10px;
+// $form-check-input-border: 2px solid $primary;
+
+// Badges
+// $badge-padding-y: .25rem;
+// $badge-padding-x: 1rem;
+// $badge-border-radius: 6.25rem;
+// $badge-font-size: .9375rem;
+// $badge-font-weight: 400;
+// $badge-color: #ffffff;
+
+// Border
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  8: 8px
+);
+
+// Modal
+// $modal-backdrop-bg: #ffffff;
+// $modal-backdrop-opacity: 1;
+// $modal-md: 540px;
+// $modal-content-border-width: 0;
+// $modal-content-border-radius: 24px;
+// $modal-inner-padding: 32px;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  // 1: $spacer * .25, // 4px
+  // 2: $spacer * .5, // 8px
+  // 3: $spacer, // 16px 
+  // 4: $spacer * 1.5, // 24px
+  // 5: $spacer * 3, // 48px
+  2: .125rem,
+  4: .25rem,
+  6: .375rem,
+  8: .5rem,
+  10: .625rem,
+  12: .75rem,
+  16: 1rem,
+  20: 1.25rem,
+  24: 1.5rem,
+  26: 1.625rem,
+  28: 1.75rem,
+  32: 2rem,
+  36: 2.25rem,
+  40: 2.5rem,
+  44: 2.75rem,
+  48: 3rem,
+  52: 3.25rem,
+  56: 3.5rem,
+  60: 3.75rem,
+  64: 4rem,
+  68: 4.25rem,
+  72: 4.5rem,
+  76: 4.75rem,
+  80: 5rem,
+  84: 5.25rem,
+  88: 5.5rem,
+  92: 5.75rem,
+  96: 6rem,
+  100: 6.25rem,
+  104: 6.5rem,
+  108: 6.75rem,
+  112: 7rem,
+  116: 7.25rem,
+  120: 7.5rem,
+  124: 7.75rem,
+  128: 8rem,
+  m8: -0.5rem,
+  m10: -0.625rem,
+);
+
+// Font
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  12: .75rem,
+  14: .875rem,
+  17: 1.0625rem,
+  20: 1.25rem,
+  24: 1.5rem,
+  28: 1.75rem
+);
+
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Import Bootstrap 5
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_variables-dark";
+
+// Colors
+$theme-colors: map-merge($custom-theme-color, $theme-colors);
+
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+
+// Position values for top, left, right, bottom
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+  3: 3px,
+  4: 4px,
+  8: 8px,
+  12: 12px,
+  16: 16px,
+  20: 20px,
+  24: 24px,
+  32: 32px,
+  40: 40px,
+  48: 48px,
+  64: 64px,
+  68: 68px,
+  72: 72px,
+  80: 80px,
+  96: 96px,
+  140: 140px,
+  m1: -1px,
+  m2: -2px,
+  m3: -3px,
+  m4: -4px,
+  m8: -8px,
+  m12: -12px,
+  m20: -1.25rem,
+  m30: -1.875rem,
+  m32: -32px,
+  m40: -40px,
+  m56: -56px,
+  m80: -80px,
+  m96: -96px
+);
+
+// Shadows
+$box-shadow-lg: 7px 16px 20px rgba(0, 0, 0, 0.03);
+
+@import "~bootstrap/scss/utilities";
+
+// Utilities
+$utilities: map-merge(
+  $utilities, 
+  (
+    "width": (
+      property: width,
+      class: w,
+      responsive: true,
+      values: (
+        25: 25%,
+        30: 30%,
+        50: 50%,
+        70: 70%,
+        75: 75%,
+        80: 80%,
+        100: 100%,
+        92a: 92%,
+        150a: 150%,
+        auto: auto,
+        4: 4px,
+        8: 8px,
+        12: 12px,
+        16: 16px,
+        20: 20px,
+        24: 24px,
+        28: 28px,
+        32: 32px,
+        36: 36px,
+        40: 40px,
+        44: 44px,
+        48: 48px,
+        52: 52px,
+        56: 56px,
+        60: 60px,
+        64: 64px,
+        68: 68px,
+        72: 72px,
+        76: 76px,
+        88: 88px,
+        92: 92px,
+        104: 104px,
+        112: 112px,
+        160: 160px,
+        180: 180px,
+        214: 214px,
+        220: 220px,
+        248: 248px,
+        280: 280px,
+        360: 360px,
+        465: 465px,
+        480: 480px
+      )
+    ),
+    "height": (
+      property: height,
+      class: h,
+      responsive: true,
+      values: (
+        25: 25%,
+        30: 30%,
+        50: 50%,
+        70: 70%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+        4: 4px,
+        8: 8px,
+        12: 12px,
+        16: 16px,
+        20: 20px,
+        24: 24px,
+        28: 28px,
+        32: 32px,
+        36: 36px,
+        40: 40px,
+        44: 44px,
+        48: 48px,
+        52: 52px,
+        56: 56px,
+        60: 60px,
+        64: 64px,
+        68: 68px,
+        72: 72px,
+        76: 76px,
+        104: 104px,
+        112: 112px,
+        160: 160px,
+        180: 180px,
+        214: 214px,
+        248: 248px,
+        280: 280px,
+        360: 360px,
+        480: 480px
+      )
+    ),
+    "flex-basis": (
+      property: flex-basis,
+      class: flex-basis,
+      responsive: true,
+      values: (
+        35: 35%,
+        33: 33.33333%,
+        50: 50%,
+        65: 65%,
+        auto: auto
+      )
+    ),
+    "font-size": (
+      rfs: false,
+      property: font-size,
+      class: fs,
+      responsive: true,
+      values: $font-sizes
+    ), 
+    "font-family": (
+      property: font-family,
+      class: font,
+      values: (
+        monospace: var(--#{$prefix}font-monospace),
+        secondary: "Golos Text"
+      )
+    ),
+    "z-index": (
+      property: z-index,
+      class: z-index,
+      responsive: true,
+      values: (
+        m1: -1,
+        5: 5,
+        10: 10,
+        15: 15,
+        50: 50,
+        700: 700,
+        900: 900,
+        910: 910,
+        999: 999
+      )
+    ),
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        4: 4px,
+        7: 7px,
+        8: 8px,
+        10: 10px,
+        12: 12px,
+        16: 16px,
+        24: 24px,
+        32: 32px,
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill)
+      )
+    ),
+    "rounded-bottom": (
+      property: border-bottom-right-radius border-bottom-left-radius,
+      class: rounded-bottom,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        8: 8px
+      )
+    ),
+    "shadow": (
+      property: box-shadow,
+      class: shadow,
+      values: (
+        null: $box-shadow,
+        sm: $box-shadow-sm,
+        lg: $box-shadow-lg,
+        grey-1: 0 4px 4px rgba(0,0,0,0.25),
+        grey-2: 0 0 11px rgba(0, 0, 0, 0.4),
+        none: none,
+      )
+    ),
+    "border-bottom": (
+      property: border-bottom,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+        1: 1px var(--#{$prefix}border-style),
+        2: 2px var(--#{$prefix}border-style)
+      )
+    ),
+    "border-top": (
+      property: border-top,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+        1: 1px var(--#{$prefix}border-style),
+        2: 2px var(--#{$prefix}border-style)
+      )
+    ),
+    "background-size": (
+      property: background-size,
+      responsive: true,
+      class: background-size,
+      values: (
+        100: 100% auto,
+        cover: cover,
+        auto: auto
+      )
+    ),
+    "rounded-start": (
+      property: border-bottom-left-radius border-top-left-radius,
+      class: rounded-start,
+      values: (
+        null: var(--#{$prefix}border-radius)
+      )
+    ),
+    "background-repeat": (
+      property: background-repeat,
+      class: background-repeat,
+      values: (
+        "no-repeat": no-repeat
+      )
+    ),
+    "background-position": (
+      property: background-position,
+      class: background-position,
+      values: (
+        "top-center": top center
+      )
+    ),
+    "min-height": (
+      property: min-height,
+      responsive: true,
+      class: minh,
+      values: (
+        initial: initial,
+        48: 48px,
+        360: 360px,
+        300: 300px,
+        320: 320px,
+        560: 560px,
+        100b: 100vh
+      )
+    ),
+    "max-height": (
+      property: max-height,
+      class: maxh,
+      responsive: true,
+      values: (
+        "initial": initial,
+        98: 98px,
+        248: 248px,
+        300: 300px,
+        320: 320px,
+        350: 350px,
+        100: 100%,
+        100b: 100vh
+      )
+    ),
+    "min-width": (
+      property: min-width,
+      class: minw,
+      responsive: true,
+      values: (
+        "initial": initial,
+        48: 48px,
+        98: 98px,
+        300: 300px,
+        320: 320px,
+        350: 350px,
+        100b: 100vh
+      )
+    ),
+    "max-width": (
+      property: max-width,
+      class: maxw,
+      responsive: true,
+      values: (
+        none: none,
+        248: 248px,
+        300: 300px,
+        320: 320px,
+        100: 100%,
+        100b: 100vh
+      )
+    ),
+    "rounded-top": (
+      property: border-top-left-radius border-top-right-radius,
+      class: rounded-top,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        20: 20px
+      )
+    ),
+    "box-sizing": (
+      property: box-sizing,
+      class: box-sizing,
+      values: (
+        content-box: content-box
+      )
+    ),
+    "opacity": (
+      property: opacity,
+      values: (
+        0: 0,
+        25: .25,
+        50: .5,
+        70: 0.7,
+        75: .75,
+        100: 1,
+      )
+    ),
+    "position": (
+      property: position,
+      values: static relative absolute fixed sticky,
+      responsive: true
+    ),
+    "top": (
+      property: top,
+      class: top,
+      values: $position-values,
+      responsive: true
+    ),
+    "bottom": (
+      property: bottom,
+      class: bottom,
+      values: $position-values,
+      responsive: true
+    ),
+    "start": (
+      property: left,
+      class: start,
+      values: $position-values,
+      responsive: true
+    ),
+    "end": (
+      property: right,
+      class: end,
+      values: $position-values,
+      responsive: true
+    ),
+    "text-shadow": (
+      property: text-shadow,
+      class: text-shadow,
+      values: (
+        grey-1: 0 4px 8px rgba(0, 0, 0, 0.25)
+      ),
+      responsive: true
+    )
+  )
+);
+
+// Import Bootstrap 5
+@import "~bootstrap/scss/bootstrap.scss";
+
+// Import Photoswipe
+// @import "~photoswipe/dist/photoswipe.css";
+// @import "~glightbox/dist/css/glightbox.min.css";
+
+// Theme styles
+@import "global";
+@import "fonts";
+@import "header";
+@import "footer";
